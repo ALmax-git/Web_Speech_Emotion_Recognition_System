@@ -89,7 +89,7 @@ For any inquiries or support, you can reach me at:
 ---
 
 Thank you for using **Web_Speech_Emotion_Recognition_System**! Enjoy the emotional detection experience.
-```
+
 
 ### Explanation of Sections:
 
