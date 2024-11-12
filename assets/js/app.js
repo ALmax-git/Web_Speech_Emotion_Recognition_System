@@ -1,4 +1,4 @@
-let emotionDisplay = document.getElementById('emotionDisplay');
+        let emotionDisplay = document.getElementById('emotionDisplay');
         let analyser, dataArray;
         let audioContext = new (window.AudioContext || window.webkitAudioContext)();
         let microphone, source;
@@ -14,14 +14,15 @@ let emotionDisplay = document.getElementById('emotionDisplay');
                 dataArray = new Uint8Array(bufferLength);
                 source.connect(analyser);
 
-                // Start analyzing every 2 seconds
-                setInterval(analyzeEmotion, 2000); // Analyze every 5 seconds
+                // Start analyzing every 1 seconds
+                setInterval(analyzeEmotion, 1000); // Analyze every 5 seconds
             })
             .catch(error => {
                 console.error('Error accessing microphone:', error);
             });
 
         function analyzeEmotion() {
+            console.log("Analyzing");
             analyser.getByteTimeDomainData(dataArray);
             analyser.getByteFrequencyData(dataArray);
 
