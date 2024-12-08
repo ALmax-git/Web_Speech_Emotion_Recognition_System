@@ -15,7 +15,7 @@
                 source.connect(analyser);
 
                 // Start analyzing every 1 seconds
-                setInterval(analyzeEmotion, 1000); // Analyze every 5 seconds
+                setInterval(analyzeEmotion, 500); // Analyze every 5 seconds
             })
             .catch(error => {
                 console.error('Error accessing microphone:', error);
